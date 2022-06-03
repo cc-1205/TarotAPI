@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+html {
+  font-family: 'Spectral', serif;
+	margin: 0;
+	background: #000000;
+}
+div {
+	text-align: center;
+  color: white;
+}
+
+.centerer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border:#f7f7f7 solid 2px;
+  border-radius: 100%;
+  color: #ffffff;
+  font-size: 20px;
+  background: #000000;
+  padding: 12px 20px 10px 20px;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+
+  animation: float 6s ease-in-out infinite;
+}
+
+.btn-centerer{
+  margin-top: 30px;
+  margin-bottom:30px;
+}
+
+.btn:hover {
+  background: #57788c;
+  text-decoration: none;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+h1{
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+h2{
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+h3{
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: r;
+  font-size: 30px;
+}
+.desc{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#desc{
+
+  width: 40%;
+  font-size: 20px;
+}
+
+#name{
+  font-size: 20px;
+}
+
+#meaning_up{
+  font-size: 20px;
+  width: 40%;
+}
+
+.meaning-centerer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center ;
+}
+
+.warning{
+  display: none;
+  color: #7ed0d6;
+}
+
+.warning-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #f7f7f7 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
